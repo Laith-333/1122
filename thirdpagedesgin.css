@@ -25,28 +25,43 @@ body {
     color: black;
   }
   
-  .search-form {
-    display: flex;
-    align-items: center;
-  }
-  .search-form input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-  }
-  .search-form button {
-    padding: 10px;
-    background-color: #ddd; 
-    color: black;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .search-form button:hover {
-    background-color: #ccc; 
-  }
-  
+
+.search-form-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #4B5B5A; 
+  width: fit-content; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: center; 
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"],
+.search-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #D1E8E2; 
+  background-color: #ffffff; 
+  color: white; 
+}
+
+.search-form button {
+  background-color: #07A792; /* Vibrant green for action */
+  color: white; /* Button text color to white */
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #058C7A; /* Darker shade for button hover */
+  color: white; /* Button hover text color to white */
+}
+
   .product-box {
     display: flex;
     flex-direction: row;
